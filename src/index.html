@@ -9,28 +9,28 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="module" src="./assets/bundle.js"></script>
   </head>
-  <body>
+  <body class="theme-extensivo scheme-dark">
     <!-- header -->
     <header class="header">
-      <svg class="icon-medgrupo">
+      <svg class="header__icon">
         <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
       </svg>
       <div class="header__stepper">
-        <p tp-label ds-color="${dsColor}" token="p14x" class="header__title">Dados pessoais</p>
+        <p tp-label token="p14x" class="header__title">Dados pessoais</p>
         <div class="header__steps header__steps--active">
-          <p tp-label ds-color="${dsColor}" token="p10b">1</p>
+          <p tp-label token="p10b">1</p>
         </div>
         <div class="header__line">&nbsp;</div>
         <div class="header__steps">
-          <p tp-label ds-color="${dsColor}" token="p10b">2</p>
+          <p tp-label token="p10b">2</p>
         </div>
         <div class="header__line">&nbsp;</div>
         <div class="header__steps">
-          <p tp-label ds-color="${dsColor}" token="p10b">3</p>
+          <p tp-label token="p10b">3</p>
         </div>
         <div class="header__line">&nbsp;</div>
         <div class="header__steps">
-          <p tp-label ds-color="${dsColor}" token="p10b">4</p>
+          <p tp-label token="p10b">4</p>
         </div>
       </div>
     </header>
@@ -38,16 +38,16 @@
 
     <!-- main -->
     <main class="main">
-      <div class="main__tela-1">
-        <p tp-label ds-color="${dsColor}" token="h32" class="main__title">Qual é o seu <span class="main__title--color">endereço?</span></p>
+      <div class="main__tela-1 show">
+        <p tp-label token="h32" class="main__title">Qual é o seu <span tp-label token="h32" ds-color="brand">endereço?</span></p>
 
         <form class="main__form">
-          <p tp-label token="p14" for="tp-input"> CEP </p>
-          <div tp-container-input ds-color=${dsColor} ds-name="secondary" ?disabled=${disabled}>
+          <p tp-label token="p14" for="tp-input" ds-color="neutral-8"> CEP </p>
+          <div tp-container-input  ds-name="secondary">
             <input
               tp-input
               id="tp-input"
-              ds-color=${dsColor} ds-name="secondary" .disabled=${disabled}
+             ds-name="secondary" 
               placeholder="00000-000"
             ></input>
             <button
@@ -61,20 +61,16 @@
             </button>
           </div>
 
-          <p tp-label token="p14" for="tp-select">Estado</p>
+          <p tp-label token="p14" for="tp-select" ds-color="neutral-8">Estado</p>
           <div
             tp-container-select
-            ds-color=${dsColor}
             ds-name="secondary"
-            ?disabled=${disabled}
-          >
+              >
             <select
               tp-select
               id="tp-select"
-              ds-color=${dsColor}
               ds-name="secondary"
-              .disabled=${disabled}
-              placeholder="Lorem ipsum dolor"
+               placeholder="Lorem ipsum dolor"
             >
               <option placeholder value="" disabled selected>
                 Lorem ipsum dolor
@@ -87,46 +83,15 @@
             </select>
             <ion-icon class="med-icon" name="chevron-down-outline"></ion-icon>
           </div>
-          <p tp-label token="p14" for="tp-select">Cidade</p>
+          <p tp-label token="p14" for="tp-select" ds-color="neutral-8">Cidade</p>
           <div
             tp-container-select
-            ds-color=${dsColor}
-            ds-name="secondary"
-            ?disabled=${disabled}
+            ds-name="secondary"            
           >
             <select
               tp-select
               id="tp-select"
-              ds-color=${dsColor}
               ds-name="secondary"
-              .disabled=${disabled}
-              placeholder="Lorem ipsum dolor"
-            >
-              <option placeholder value="" disabled selected>
-                Lorem ipsum dolor
-              </option>
-              <option>Lorem ipsum dolor 1</option>
-              <option>Lorem ipsum dolor 2</option>
-              <option>Lorem ipsum dolor 3</option>
-              <option>Lorem ipsum dolor 4</option>
-              <option>Lorem ipsum dolor 5</option>
-            </select>
-            <ion-icon class="med-icon" name="chevron-down-outline"></ion-icon>
-          </div>
-
-          <p tp-label token="p14" for="tp-select">Bairro</p>
-          <div
-            tp-container-select
-            ds-color=${dsColor}
-            ds-name="secondary"
-            ?disabled=${disabled}
-          >
-            <select
-              tp-select
-              id="tp-select"
-              ds-color=${dsColor}
-              ds-name="secondary"
-              .disabled=${disabled}
               placeholder="Lorem ipsum dolor"
             >
               <option placeholder value="" disabled selected>
@@ -141,12 +106,35 @@
             <ion-icon class="med-icon" name="chevron-down-outline"></ion-icon>
           </div>
 
-          <p tp-label token="p14" for="tp-input"> Rua, Avenida etc </p>
-          <div tp-container-input ds-color=${dsColor} ds-name="secondary" ?disabled=${disabled}>
+          <p tp-label token="p14" for="tp-select" ds-color="neutral-8">Bairro</p>
+          <div
+            tp-container-select
+            ds-name="secondary"            
+          >
+            <select
+              tp-select
+              id="tp-select"
+              ds-name="secondary"            
+              placeholder="Lorem ipsum dolor"
+            >
+              <option placeholder value="" disabled selected>
+                Lorem ipsum dolor
+              </option>
+              <option>Lorem ipsum dolor 1</option>
+              <option>Lorem ipsum dolor 2</option>
+              <option>Lorem ipsum dolor 3</option>
+              <option>Lorem ipsum dolor 4</option>
+              <option>Lorem ipsum dolor 5</option>
+            </select>
+            <ion-icon class="med-icon" name="chevron-down-outline"></ion-icon>
+          </div>
+
+          <p tp-label token="p14" for="tp-input" ds-color="neutral-8"> Rua, Avenida etc </p>
+          <div tp-container-input ds-name="secondary">
             <input
               tp-input
               id="tp-input"
-              ds-color=${dsColor} ds-name="secondary" .disabled=${disabled}
+              ds-name="secondary"
               placeholder="00000-000"
             ></input>
             <button
@@ -160,53 +148,48 @@
             </button>
           </div>
 
-          <p tp-label token="p14" for="tp-input"> Número </p>
-          <div tp-container-input ds-color=${dsColor} ds-name="secondary" ?disabled=${disabled}>
+          <p tp-label token="p14" for="tp-input" ds-color="neutral-8"> Número </p>
+          <div tp-container-input ds-name="secondary">
             <input
               tp-input
               id="tp-input"
-              ds-color=${dsColor} ds-name="secondary" .disabled=${disabled}
+              ds-name="secondary"
               placeholder="00000-000"
             ></input>
             <button
               tp-button
               icon-only
               fill="clear"
-              ds-size="xs"
-              .disabled=${disabled}
+              ds-size="xs"             
               >
               <ion-icon class="med-icon" name="close-outline"></ion-icon>
             </button>
           </div>
 
-          <p tp-label token="p14" for="tp-input"> Complemento </p>
-          <div tp-container-input ds-color=${dsColor} ds-name="secondary" ?disabled=${disabled}>
+          <p tp-label token="p14" for="tp-input" ds-color="neutral-8"> Complemento </p>
+          <div tp-container-input ds-name="secondary">
             <input
               tp-input
               id="tp-input"
-              ds-color=${dsColor} ds-name="secondary" .disabled=${disabled}
+              ds-name="secondary"
               placeholder="00000-000"
             ></input>
             <button
               tp-button
               icon-only
               fill="clear"
-              ds-size="xs"
-              .disabled=${disabled}
+              ds-size="xs"              
               >
               <ion-icon class="med-icon" name="close-outline"></ion-icon>
             </button>
           </div>
 
         </form>
-        
+
           <div class="main__button-container">
             <button
               tp-button
               fill="clear"
-              ${dsColor ? `ds-color=${dsColor}` : ""}
-              ${dsSize ? `ds-size=${dsSize}` : ""}
-              ${disabled ? `disabled=${disabled}` : ""}
               expand="block"
               >
               <span>Voltar</span>
@@ -214,9 +197,7 @@
 
             <button
               tp-button
-              ${dsColor ? `ds-color=${dsColor}` : ""}
-              ${dsSize ? `ds-size=${dsSize}` : ""}
-              ${disabled ? `disabled=${disabled}` : ""}
+              class="continuar"
               expand="block"
               >
               <span>Continuar</span>
@@ -225,7 +206,90 @@
           </div>
        
       </div>
+      
+      <div class="main__tela-2 hidden">
+        <p tp-label token="h32" class="main__title">Selecione o 
+        </br>
+          <span tp-label token="h32" ds-color="brand">curso desejado</span>
+        </p>
+
+        <div class="main__cards-container">
+          <div class="card">
+            <svg class="card__icon">
+              <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
+            </svg>
+            <p tp-label token="h20x" class="card__title">MEDCURSO 2023 </p>
+            <p tp-label token="p14x" ds-color="neutral-8" class="card__description">Indicado para os estudantes do 5º ano da graduação médica. </p>
+          </div>
+          <div class="card">
+            <svg class="card__icon">
+              <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
+            </svg>
+            <p tp-label token="h20x" class="card__title">MEDCURSO 2023 </p>
+            <p tp-label token="p14x" ds-color="neutral-8" class="card__description">Indicado para os estudantes do 5º ano da graduação médica. </p>
+          </div>
+          <div class="card">
+            <svg class="card__icon">
+              <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
+            </svg>
+            <p tp-label token="h20x" class="card__title">MEDCURSO 2023 </p>
+            <p tp-label token="p14x" ds-color="neutral-8" class="card__description">Indicado para os estudantes do 5º ano da graduação médica. </p>
+          </div>
+          <div class="card">
+            <svg class="card__icon">
+              <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
+            </svg>
+            <p tp-label token="h20x" class="card__title">MEDCURSO 2023 </p>
+            <p tp-label token="p14x" ds-color="neutral-8" class="card__description">Indicado para os estudantes do 5º ano da graduação médica. </p>
+          </div>
+        </div>
+
+        <button
+          tp-button
+          class="voltar"
+          fill="clear"
+          expand="block"
+           >
+          <span>Voltar</span>
+         </button>
+
+        
+
+      </div>
     </main>
     <!-- main -->
+
+    <!-- funcionalidade troca tela -->
+    <script>
+      const continuar = document.querySelector(".continuar");
+      const voltar = document.querySelector(".voltar");
+      const tela1 = document.querySelector(".main__tela-1");
+      const tela2 = document.querySelector(".main__tela-2");
+
+      continuar.addEventListener("click", (e) => {
+        tela1.classList.remove("show");
+        tela1.classList.add("hidden");
+        tela2.classList.add("show");
+        tela2.classList.remove("hidden");
+
+        tela1.classList.add("move-out-left");
+        tela1.classList.remove("move-in-left");
+        tela2.classList.add("move-in-right");
+        tela2.classList.remove("move-out-right");
+      });
+
+      voltar.addEventListener("click", (e) => {
+        tela1.classList.add("show");
+        tela1.classList.remove("hidden");
+        tela2.classList.remove("show");
+        tela2.classList.add("hidden");
+
+        tela1.classList.remove("move-out-left");
+        tela1.classList.add("move-in-left");
+        tela2.classList.remove("move-in-right");
+        tela2.classList.add("move-out-right");
+      });
+    </script>
   </body>
+
 </html>

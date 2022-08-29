@@ -12,4 +12,7 @@ html {
 body {
   box-sizing: border-box;
   background-color: hsl(var(--med-color-neutral-2));
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 100vh;
 }

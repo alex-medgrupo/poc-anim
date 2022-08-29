@@ -1,20 +1,15 @@
 .main {
-  padding: 24px;
+  position: relative;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  overflow-x: hidden;
 
   &__title {
     margin: 24px 0;
   }
 
-  &__title--color {
-    color: hsl(var(--med-color-brand-3));
-  }
-
   &__form {
     padding: 24px 0;
-
-    [tp-label] {
-      color: hsl(var(--med-color-neutral-8));
-    }
 
     [tp-container-input]:not(:last-child),
     [tp-container-select]:not(:last-child) {
@@ -34,5 +29,50 @@
     [tp-button]:not(:last-child) {
       margin-right: 24px;
     }
+  }
+
+  &__cards-container {
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+// transição das telas
+.main {
+  &__tela-1,
+  &__tela-2 {
+    width: 100%;
+    // transition: all 1s;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 24px;
+  }
+}
+
+.show {
+  &.main__tela-1 {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  &.main__tela-2 {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hidden {
+  &.main__tela-1 {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  &.main__tela-2 {
+    transform: translateX(100%);
+    opacity: 0;
   }
 }

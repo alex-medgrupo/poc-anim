@@ -4,10 +4,10 @@
   align-items: center;
   padding: 24px;
 
-  .icon-medgrupo {
+  &__icon {
     height: 32px;
     width: 32px;
-    fill: #fff;
+    fill: hsl(var(--med-color-neutral-10));
   }
 
   &__stepper {
