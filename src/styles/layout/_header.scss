@@ -2,10 +2,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 24px;
 
   .icon-medgrupo {
     height: 32px;
     width: 32px;
     fill: #fff;
+  }
+
+  &__stepper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-right: 12px;
+  }
+
+  &__steps {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    color: hsl(var(--med-color-neutral-6));
+    background-color: hsl(var(--med-color-neutral-25));
+    border: 1px solid hsl(var(--med-color-neutral-25));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__steps--active {
+    background-color: transparent;
+    border: 1px solid hsl(var(--med-color-neutral-4));
+  }
+
+  &__line {
+    width: 12px;
+    height: 0;
+    border-bottom: 1px dotted hsl(var(--med-color-neutral-3));
+    margin: 0 4px;
   }
 }

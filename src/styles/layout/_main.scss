@@ -1,0 +1,38 @@
+.main {
+  padding: 24px;
+
+  &__title {
+    margin: 24px 0;
+  }
+
+  &__title--color {
+    color: hsl(var(--med-color-brand-3));
+  }
+
+  &__form {
+    padding: 24px 0;
+
+    [tp-label] {
+      color: hsl(var(--med-color-neutral-8));
+    }
+
+    [tp-container-input]:not(:last-child),
+    [tp-container-select]:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    .med-icon {
+      color: hsl(var(--med-color-neutral-6));
+    }
+  }
+
+  &__button-container {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+
+    [tp-button]:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}

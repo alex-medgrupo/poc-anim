@@ -10,11 +10,222 @@
     <script type="module" src="./assets/bundle.js"></script>
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <svg class="icon-medgrupo">
         <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
       </svg>
-      <button tp-button>teste <ion-icon name="heart"></ion-icon></button>
+      <div class="header__stepper">
+        <p tp-label ds-color="${dsColor}" token="p14x" class="header__title">Dados pessoais</p>
+        <div class="header__steps header__steps--active">
+          <p tp-label ds-color="${dsColor}" token="p10b">1</p>
+        </div>
+        <div class="header__line">&nbsp;</div>
+        <div class="header__steps">
+          <p tp-label ds-color="${dsColor}" token="p10b">2</p>
+        </div>
+        <div class="header__line">&nbsp;</div>
+        <div class="header__steps">
+          <p tp-label ds-color="${dsColor}" token="p10b">3</p>
+        </div>
+        <div class="header__line">&nbsp;</div>
+        <div class="header__steps">
+          <p tp-label ds-color="${dsColor}" token="p10b">4</p>
+        </div>
+      </div>
     </header>
+    <!-- header -->
+
+    <!-- main -->
+    <main class="main">
+      <div class="main__tela-1">
+        <p tp-label ds-color="${dsColor}" token="h32" class="main__title">Qual é o seu <span class="main__title--color">endereço?</span></p>
+
+        <form class="main__form">
+          <p tp-label token="p14" for="tp-input"> CEP </p>
+          <div tp-container-input ds-color=${dsColor} ds-name="secondary" ?disabled=${disabled}>
+            <input
+              tp-input
+              id="tp-input"
+              ds-color=${dsColor} ds-name="secondary" .disabled=${disabled}
+              placeholder="00000-000"
+            ></input>
+            <button
+              tp-button
+              icon-only
+              fill="clear"
+              ds-size="xs"
+              .disabled=${disabled}
+              >
+              <ion-icon class="med-icon" name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <p tp-label token="p14" for="tp-select">Estado</p>
+          <div
+            tp-container-select
+            ds-color=${dsColor}
+            ds-name="secondary"
+            ?disabled=${disabled}
+          >
+            <select
+              tp-select
+              id="tp-select"
+              ds-color=${dsColor}
+              ds-name="secondary"
+              .disabled=${disabled}
+              placeholder="Lorem ipsum dolor"
+            >
+              <option placeholder value="" disabled selected>
+                Lorem ipsum dolor
+              </option>
+              <option>Lorem ipsum dolor 1</option>
+              <option>Lorem ipsum dolor 2</option>
+              <option>Lorem ipsum dolor 3</option>
+              <option>Lorem ipsum dolor 4</option>
+              <option>Lorem ipsum dolor 5</option>
+            </select>
+            <ion-icon class="med-icon" name="chevron-down-outline"></ion-icon>
+          </div>
+          <p tp-label token="p14" for="tp-select">Cidade</p>
+          <div
+            tp-container-select
+            ds-color=${dsColor}
+            ds-name="secondary"
+            ?disabled=${disabled}
+          >
+            <select
+              tp-select
+              id="tp-select"
+              ds-color=${dsColor}
+              ds-name="secondary"
+              .disabled=${disabled}
+              placeholder="Lorem ipsum dolor"
+            >
+              <option placeholder value="" disabled selected>
+                Lorem ipsum dolor
+              </option>
+              <option>Lorem ipsum dolor 1</option>
+              <option>Lorem ipsum dolor 2</option>
+              <option>Lorem ipsum dolor 3</option>
+              <option>Lorem ipsum dolor 4</option>
+              <option>Lorem ipsum dolor 5</option>
+            </select>
+            <ion-icon class="med-icon" name="chevron-down-outline"></ion-icon>
+          </div>
+
+          <p tp-label token="p14" for="tp-select">Bairro</p>
+          <div
+            tp-container-select
+            ds-color=${dsColor}
+            ds-name="secondary"
+            ?disabled=${disabled}
+          >
+            <select
+              tp-select
+              id="tp-select"
+              ds-color=${dsColor}
+              ds-name="secondary"
+              .disabled=${disabled}
+              placeholder="Lorem ipsum dolor"
+            >
+              <option placeholder value="" disabled selected>
+                Lorem ipsum dolor
+              </option>
+              <option>Lorem ipsum dolor 1</option>
+              <option>Lorem ipsum dolor 2</option>
+              <option>Lorem ipsum dolor 3</option>
+              <option>Lorem ipsum dolor 4</option>
+              <option>Lorem ipsum dolor 5</option>
+            </select>
+            <ion-icon class="med-icon" name="chevron-down-outline"></ion-icon>
+          </div>
+
+          <p tp-label token="p14" for="tp-input"> Rua, Avenida etc </p>
+          <div tp-container-input ds-color=${dsColor} ds-name="secondary" ?disabled=${disabled}>
+            <input
+              tp-input
+              id="tp-input"
+              ds-color=${dsColor} ds-name="secondary" .disabled=${disabled}
+              placeholder="00000-000"
+            ></input>
+            <button
+              tp-button
+              icon-only
+              fill="clear"
+              ds-size="xs"
+              .disabled=${disabled}
+              >
+              <ion-icon class="med-icon" name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <p tp-label token="p14" for="tp-input"> Número </p>
+          <div tp-container-input ds-color=${dsColor} ds-name="secondary" ?disabled=${disabled}>
+            <input
+              tp-input
+              id="tp-input"
+              ds-color=${dsColor} ds-name="secondary" .disabled=${disabled}
+              placeholder="00000-000"
+            ></input>
+            <button
+              tp-button
+              icon-only
+              fill="clear"
+              ds-size="xs"
+              .disabled=${disabled}
+              >
+              <ion-icon class="med-icon" name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <p tp-label token="p14" for="tp-input"> Complemento </p>
+          <div tp-container-input ds-color=${dsColor} ds-name="secondary" ?disabled=${disabled}>
+            <input
+              tp-input
+              id="tp-input"
+              ds-color=${dsColor} ds-name="secondary" .disabled=${disabled}
+              placeholder="00000-000"
+            ></input>
+            <button
+              tp-button
+              icon-only
+              fill="clear"
+              ds-size="xs"
+              .disabled=${disabled}
+              >
+              <ion-icon class="med-icon" name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+        </form>
+        
+          <div class="main__button-container">
+            <button
+              tp-button
+              fill="clear"
+              ${dsColor ? `ds-color=${dsColor}` : ""}
+              ${dsSize ? `ds-size=${dsSize}` : ""}
+              ${disabled ? `disabled=${disabled}` : ""}
+              expand="block"
+              >
+              <span>Voltar</span>
+            </button>
+
+            <button
+              tp-button
+              ${dsColor ? `ds-color=${dsColor}` : ""}
+              ${dsSize ? `ds-size=${dsSize}` : ""}
+              ${disabled ? `disabled=${disabled}` : ""}
+              expand="block"
+              >
+              <span>Continuar</span>
+            </button>
+
+          </div>
+       
+      </div>
+    </main>
+    <!-- main -->
   </body>
 </html>
