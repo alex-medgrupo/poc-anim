@@ -55,19 +55,23 @@
 .show {
   &.main__tela-1 {
     opacity: 1;
+    transform: translateX(0);
   }
 
   &.main__tela-2 {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 
 .hidden {
   &.main__tela-1 {
     opacity: 0;
+    transform: translateX(-100%);
   }
 
   &.main__tela-2 {
     opacity: 0;
+    transform: translateX(100%);
   }
 }
