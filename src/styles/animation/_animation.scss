@@ -1,10 +1,10 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 
-  70% {
+  65% {
     opacity: 0;
   }
 
@@ -17,10 +17,10 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
 
-  70% {
+  65% {
     opacity: 0;
   }
 
@@ -36,13 +36,13 @@
     transform: translateX(0);
   }
 
-  30% {
+  35% {
     opacity: 0;
   }
 
   100% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -52,32 +52,38 @@
     transform: translateX(0);
   }
 
-  30% {
+  35% {
     opacity: 0;
   }
 
   100% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
+}
+
+.move-in-left,
+.move-in-right {
+  animation-duration: 0.4s;
 }
 
 .move-in-left {
   animation-name: moveInLeft;
-  animation-duration: 0.5s;
 }
 
 .move-in-right {
   animation-name: moveInRight;
-  animation-duration: 0.5s;
+}
+
+.move-out-left,
+.move-out-right {
+  animation-duration: 0.8s;
 }
 
 .move-out-left {
   animation-name: moveOutLeft;
-  animation-duration: 0.5s;
 }
 
 .move-out-right {
   animation-name: moveOutRight;
-  animation-duration: 0.5s;
 }
