@@ -41,7 +41,6 @@
 
 // transição das telas
 .main {
-
   &__tela-1,
   &__tela-2 {
     width: 100%;
@@ -49,6 +48,10 @@
     top: 0;
     left: 0;
     padding: 24px;
+  }
+
+  &__tela-2 {
+    scroll-behavior: auto;
   }
 }
 
