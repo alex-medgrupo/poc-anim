@@ -39,7 +39,7 @@
   &__line {
     width: 12px;
     height: 0;
-    border-bottom: 1px dotted hsl(var(--med-color-neutral-3));
+    border-bottom: 1px dashed hsl(var(--med-color-neutral-3));
     margin: 0 4px;
   }
 }
