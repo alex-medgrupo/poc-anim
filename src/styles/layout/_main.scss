@@ -41,11 +41,10 @@
 
 // transição das telas
 .main {
+
   &__tela-1,
   &__tela-2 {
     width: 100%;
-    // transition: all 1s;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -55,24 +54,20 @@
 
 .show {
   &.main__tela-1 {
-    transform: translateX(0);
     opacity: 1;
   }
 
   &.main__tela-2 {
-    transform: translateX(0);
     opacity: 1;
   }
 }
 
 .hidden {
   &.main__tela-1 {
-    transform: translateX(-100%);
     opacity: 0;
   }
 
   &.main__tela-2 {
-    transform: translateX(100%);
     opacity: 0;
   }
 }
