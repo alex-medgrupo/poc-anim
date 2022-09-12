@@ -1,0 +1,41 @@
+.extensivo-col {
+  &--text-container-inicio {
+    align-self: center;
+
+    @media only screen and (max-width: 1200px) {
+      flex: 0 0 56%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      align-self: start;
+    }
+  }
+
+  &--imagem-container {
+    align-self: center;
+
+    @media only screen and (max-width: 1200px) {
+      flex: 0 0 44%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      transform: translateX(0);
+    }
+  }
+
+  &__imagem {
+    @media only screen and (max-width: 768px) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.extensivo-inicio {
+  &__text {
+    margin-top: 24px;
+  }
+
+  &__button {
+    padding: 40px 24px 24px 24px;
+  }
+}

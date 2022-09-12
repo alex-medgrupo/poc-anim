@@ -1,295 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="./assets/bundle.js"></script>
-  </head>
-  <body class="theme-extensivo scheme-dark">
-    <!-- header -->
-    <header class="header">
-      <svg class="header__icon">
-        <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
-      </svg>
-      <div class="header__stepper">
-        <p tp-label token="p14x" class="header__title">Dados pessoais</p>
-        <div class="header__steps header__steps--active">
-          <p tp-label token="p10b">1</p>
+<html lang="en" class="theme-medsoft scheme-dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="./assets/bundle.js"></script>
+</head>
+
+<body>
+  <section>
+    <div class="extensivo-header">
+      <div class="extensivo-header__container">
+        <div class="extensivo-header__logo-container">
+          <div class="extensivo-header__logo-circle">
+            <svg class="extensivo-header__logo">
+              <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
+            </svg>
+          </div>
+          <ion-label class="extensivo-header__title-logo" token="h20">MEDGRUPO</ion-label>
         </div>
-        <div class="header__line">&nbsp;</div>
-        <div class="header__steps">
-          <p tp-label token="p10b">2</p>
+        <ion-label class="extensivo-header__title" token="h20">MEDSoft Trial</ion-label>
+      </div>
+
+      <div class="extensivo-header__stepper extensivo-header__stepper--none ">
+        <ion-label class="extensivo-header__dados" token="p14x" ds-color="neutral-8">Dados pessoais</ion-label>
+
+        <div class="extensivo-header__steps extensivo-header__steps--checked">
+          <ion-label token="p10b" ds-color="neutral-6">1</ion-label>
+          <ion-icon class="med-icon" name="checkmark-outline"></ion-icon>
         </div>
-        <div class="header__line">&nbsp;</div>
-        <div class="header__steps">
-          <p tp-label token="p10b">3</p>
+
+        <div class="extensivo-header__line">&nbsp;</div>
+
+        <div class="extensivo-header__steps extensivo-header__steps--active">
+          <ion-label token="p10b" ds-color="neutral-6">2</ion-label>
+          <ion-icon class="med-icon" name="checkmark-outline"></ion-icon>
         </div>
-        <div class="header__line">&nbsp;</div>
-        <div class="header__steps">
-          <p tp-label token="p10b">4</p>
+
+        <div class="extensivo-header__line">&nbsp;</div>
+
+        <div class="extensivo-header__steps ">
+          <ion-label token="p10b" ds-color="neutral-6">3</ion-label>
+          <ion-icon class="med-icon" name="checkmark-outline"></ion-icon>
+        </div>
+
+        <div class="extensivo-header__line">&nbsp;</div>
+
+        <div class="extensivo-header__steps">
+          <ion-label token="p10b" ds-color="neutral-6">4</ion-label>
+          <ion-icon class="med-icon" name="checkmark-outline"></ion-icon>
         </div>
       </div>
-    </header>
-    <!-- header -->
-
-    <!-- main -->
-    <main class="main">
-      <div class="main__tela-1 show">
-        <p tp-label token="h32" class="main__title">Qual é o seu <span tp-label token="h32" ds-color="brand">endereço?</span></p>
-
-        <form class="main__form">
-          <p tp-label token="p14" for="tp-input" ds-color="neutral-8"> CEP </p>
-          <div tp-container-input  ds-name="secondary">
-            <input
-              tp-input
-              id="tp-input"
-             ds-name="secondary" 
-              placeholder="00000-000"
-            ></input>
-            <button
-              tp-button
-              icon-only
-              fill="clear"
-              ds-size="xs"
-              .disabled=${disabled}
-              >
-              <ion-icon class="med-icon" name="close-outline"></ion-icon>
-            </button>
+    </div>
+    <main class="extensivo-container extensivo-container--main">
+      <div class="extensivo-row">
+        <div class="extensivo-col extensivo-col--text-container-inicio">
+          <div class="extensivo-text-container">
+            <ion-label class="extensivo-title" token="h48x">
+              Experimente <ion-label class="extensivo-title extensivo-title--brand-4" token="h48x" ds-color="brand">o
+                melhor curso preparatório
+              </ion-label>
+              </br>
+              para residência médica do mundo
+            </ion-label>
+            <ion-label class="extensivo-inicio__text" token="p16x" ds-color="neutral-8">Inscreva-se para o período de
+              testes do MEDSoft. É fácil e rápido! </ion-label>
           </div>
-
-          <p tp-label token="p14" for="tp-select" ds-color="neutral-8">Estado</p>
-          <div
-            tp-container-select
-            ds-name="secondary"
-              >
-            <select
-              tp-select
-              id="tp-select"
-              ds-name="secondary"
-               placeholder="Lorem ipsum dolor"
-            >
-              <option placeholder value="" disabled selected>
-                Lorem ipsum dolor
-              </option>
-              <option>Lorem ipsum dolor 1</option>
-              <option>Lorem ipsum dolor 2</option>
-              <option>Lorem ipsum dolor 3</option>
-              <option>Lorem ipsum dolor 4</option>
-              <option>Lorem ipsum dolor 5</option>
-            </select>
-            <ion-icon class="med-icon" name="chevron-down-outline"></ion-icon>
-          </div>
-          <p tp-label token="p14" for="tp-select" ds-color="neutral-8">Cidade</p>
-          <div
-            tp-container-select
-            ds-name="secondary"            
-          >
-            <select
-              tp-select
-              id="tp-select"
-              ds-name="secondary"
-              placeholder="Lorem ipsum dolor"
-            >
-              <option placeholder value="" disabled selected>
-                Lorem ipsum dolor
-              </option>
-              <option>Lorem ipsum dolor 1</option>
-              <option>Lorem ipsum dolor 2</option>
-              <option>Lorem ipsum dolor 3</option>
-              <option>Lorem ipsum dolor 4</option>
-              <option>Lorem ipsum dolor 5</option>
-            </select>
-            <ion-icon class="med-icon" name="chevron-down-outline"></ion-icon>
-          </div>
-
-          <p tp-label token="p14" for="tp-select" ds-color="neutral-8">Bairro</p>
-          <div
-            tp-container-select
-            ds-name="secondary"            
-          >
-            <select
-              tp-select
-              id="tp-select"
-              ds-name="secondary"            
-              placeholder="Lorem ipsum dolor"
-            >
-              <option placeholder value="" disabled selected>
-                Lorem ipsum dolor
-              </option>
-              <option>Lorem ipsum dolor 1</option>
-              <option>Lorem ipsum dolor 2</option>
-              <option>Lorem ipsum dolor 3</option>
-              <option>Lorem ipsum dolor 4</option>
-              <option>Lorem ipsum dolor 5</option>
-            </select>
-            <ion-icon class="med-icon" name="chevron-down-outline"></ion-icon>
-          </div>
-
-          <p tp-label token="p14" for="tp-input" ds-color="neutral-8"> Rua, Avenida etc </p>
-          <div tp-container-input ds-name="secondary">
-            <input
-              tp-input
-              id="tp-input"
-              ds-name="secondary"
-              placeholder="00000-000"
-            ></input>
-            <button
-              tp-button
-              icon-only
-              fill="clear"
-              ds-size="xs"
-              .disabled=${disabled}
-              >
-              <ion-icon class="med-icon" name="close-outline"></ion-icon>
-            </button>
-          </div>
-
-          <p tp-label token="p14" for="tp-input" ds-color="neutral-8"> Número </p>
-          <div tp-container-input ds-name="secondary">
-            <input
-              tp-input
-              id="tp-input"
-              ds-name="secondary"
-              placeholder="00000-000"
-            ></input>
-            <button
-              tp-button
-              icon-only
-              fill="clear"
-              ds-size="xs"             
-              >
-              <ion-icon class="med-icon" name="close-outline"></ion-icon>
-            </button>
-          </div>
-
-          <p tp-label token="p14" for="tp-input" ds-color="neutral-8"> Complemento </p>
-          <div tp-container-input ds-name="secondary">
-            <input
-              tp-input
-              id="tp-input"
-              ds-name="secondary"
-              placeholder="00000-000"
-            ></input>
-            <button
-              tp-button
-              icon-only
-              fill="clear"
-              ds-size="xs"              
-              >
-              <ion-icon class="med-icon" name="close-outline"></ion-icon>
-            </button>
-          </div>
-
-        </form>
-
-          <div class="main__button-container">
-            <button
-              tp-button
-              fill="clear"
-              expand="block"
-              >
-              <span>Voltar</span>
-            </button>
-
-            <button
-              tp-button
-              class="continuar"
-              expand="block"
-              >
-              <span>Continuar</span>
-            </button>
-
-          </div>
-       
-      </div>
-      
-      <div class="main__tela-2 hidden">
-        <p tp-label token="h32" class="main__title">Selecione o 
-        </br>
-          <span tp-label token="h32" ds-color="brand">curso desejado</span>
-        </p>
-
-        <div class="main__cards-container">
-          <div class="card">
-            <svg class="card__icon">
-              <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
-            </svg>
-            <p tp-label token="h20x" class="card__title">MEDCURSO 2023 </p>
-            <p tp-label token="p14x" ds-color="neutral-8" class="card__description">Indicado para os estudantes do 5º ano da graduação médica. </p>
-          </div>
-          <div class="card">
-            <svg class="card__icon">
-              <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
-            </svg>
-            <p tp-label token="h20x" class="card__title">MEDCURSO 2023 </p>
-            <p tp-label token="p14x" ds-color="neutral-8" class="card__description">Indicado para os estudantes do 5º ano da graduação médica. </p>
-          </div>
-          <div class="card">
-            <svg class="card__icon">
-              <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
-            </svg>
-            <p tp-label token="h20x" class="card__title">MEDCURSO 2023 </p>
-            <p tp-label token="p14x" ds-color="neutral-8" class="card__description">Indicado para os estudantes do 5º ano da graduação médica. </p>
-          </div>
-          <div class="card">
-            <svg class="card__icon">
-              <use xlink:href="./assets/icon/symbol-defs.svg#icon-medgrupo"></use>
-            </svg>
-            <p tp-label token="h20x" class="card__title">MEDCURSO 2023 </p>
-            <p tp-label token="p14x" ds-color="neutral-8" class="card__description">Indicado para os estudantes do 5º ano da graduação médica. </p>
+          <div class="extensivo-button">
+            <button tp-button>Inscreva-se</button>
+            <button tp-button fill="outline">Saiba mais sobre o MEDSoft</button>
           </div>
         </div>
 
-        <button
-          tp-button
-          class="voltar"
-          fill="clear"
-          expand="block"
-           >
-          <span>Voltar</span>
-         </button>
-
-        
-
+        <div class="extensivo-col extensivo-col--imagem-container">
+          <img class="extensivo-col__imagem" src="./assets/img/tela-inicio.svg" alt="Imagem tela inicial" />
+        </div>
       </div>
     </main>
-    <!-- main -->
+  </section>
+  <!-- funcionalidade troca tela -->
+  <script>
+    const continuar = document.querySelector(".continuar");
+    const voltar = document.querySelector(".voltar");
+    const tela1 = document.querySelector(".main__tela-1");
+    const tela2 = document.querySelector(".main__tela-2");
 
-    <!-- funcionalidade troca tela -->
-    <script>
-      const continuar = document.querySelector(".continuar");
-      const voltar = document.querySelector(".voltar");
-      const tela1 = document.querySelector(".main__tela-1");
-      const tela2 = document.querySelector(".main__tela-2");
+    continuar.addEventListener("click", (e) => {
+      tela1.classList.remove("show");
+      tela1.classList.add("hidden");
+      tela2.classList.add("show");
+      tela2.classList.remove("hidden");
 
-      continuar.addEventListener("click", (e) => {
-        tela1.classList.remove("show");
-        tela1.classList.add("hidden");
-        tela2.classList.add("show");
-        tela2.classList.remove("hidden");
+      tela1.classList.add("move-out-left");
+      tela1.classList.remove("move-in-left");
+      tela2.classList.add("move-in-right");
+      tela2.classList.remove("move-out-right");
+    });
 
-        tela1.classList.add("move-out-left");
-        tela1.classList.remove("move-in-left");
-        tela2.classList.add("move-in-right");
-        tela2.classList.remove("move-out-right");
-      });
+    voltar.addEventListener("click", (e) => {
+      tela1.classList.add("show");
+      tela1.classList.remove("hidden");
+      tela2.classList.remove("show");
+      tela2.classList.add("hidden");
 
-      voltar.addEventListener("click", (e) => {
-        tela1.classList.add("show");
-        tela1.classList.remove("hidden");
-        tela2.classList.remove("show");
-        tela2.classList.add("hidden");
-
-        tela1.classList.remove("move-out-left");
-        tela1.classList.add("move-in-left");
-        tela2.classList.remove("move-in-right");
-        tela2.classList.add("move-out-right");
-      });
-    </script>
-  </body>
+      tela1.classList.remove("move-out-left");
+      tela1.classList.add("move-in-left");
+      tela2.classList.remove("move-in-right");
+      tela2.classList.add("move-out-right");
+    });
+  </script>
+</body>
 
 </html>

@@ -1,8 +1,20 @@
+// templarios
+@import "../../node_modules/@ionic/core/templarios/css/themes/default.css";
+@import "../../node_modules/@ionic/core/templarios/css/themes/medsoft.css";
+@import "../../node_modules/@ionic/core/templarios/css/themes/extensivo.css";
+@import "../../node_modules/@ionic/core/templarios/css/schemes/light.css";
+@import "../../node_modules/@ionic/core/templarios/css/templarios.css";
+@import "../../node_modules/@ionic/core/templarios/css/templarios-css-framework.css";
+
 @import 'animation/animation';
 
 @import 'base/base';
 
 @import 'components/card';
+@import 'components/header';
+@import 'components/tela-inicio';
 
-@import 'layout/header';
+@import 'layout/layout';
 @import 'layout/main';
+@import 'layout/section';
+@import 'layout/tela-inicio';
