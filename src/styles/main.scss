@@ -1,20 +1,28 @@
 // templarios
-@import "../../node_modules/@ionic/core/templarios/css/themes/default.css";
-@import "../../node_modules/@ionic/core/templarios/css/themes/medsoft.css";
-@import "../../node_modules/@ionic/core/templarios/css/themes/extensivo.css";
-@import "../../node_modules/@ionic/core/templarios/css/schemes/light.css";
-@import "../../node_modules/@ionic/core/templarios/css/templarios.css";
-@import "../../node_modules/@ionic/core/templarios/css/templarios-css-framework.css";
+@import '../../node_modules/@ionic/core/templarios/css/themes/default.css';
+@import '../../node_modules/@ionic/core/templarios/css/themes/medsoft.css';
+@import '../../node_modules/@ionic/core/templarios/css/themes/extensivo.css';
+@import '../../node_modules/@ionic/core/templarios/css/schemes/light.css';
+@import '../../node_modules/@ionic/core/templarios/css/templarios.css';
+@import '../../node_modules/@ionic/core/templarios/css/templarios-css-framework.css';
 
-@import 'animation/animation';
+// @import 'animation/animation';
 
-@import 'base/base';
+// @import 'base/base';
 
-@import 'components/card';
-@import 'components/header';
-@import 'components/tela-inicio';
+// @import 'components/card';
+// @import 'components/header';
+// @import 'components/tela-inicio';
 
-@import 'layout/layout';
-@import 'layout/main';
-@import 'layout/section';
-@import 'layout/tela-inicio';
+// @import 'layout/layout';
+// @import 'layout/main';
+// @import 'layout/section';
+// @import 'layout/tela-inicio';
+
+@import 'base';
+
+// politica de privacidade
+@import 'politica-privacidade';
+
+// termos de uso
+@import 'termos-uso';
